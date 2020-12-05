@@ -1,0 +1,72 @@
+
+<html>
+<head>
+   <title>Carousel</title>
+   <style>
+       .slider{
+           width : 80%;
+           height : 400px;
+           box-shadow : 5px 5px 10px black ;
+           background-image: url(image1.jpg);
+           background-size : 100% 100%;
+           transition : all 1s;    
+           position: relative;
+       }
+       input[type=radio]{
+           outline : none;
+           cursor: pointer;
+           opacity : 0.7 ;
+       }
+       .dots{
+           position: absolute;
+           bottom : 10px;
+           left : 45%;
+       }
+   </style>
+</head>
+<body>
+    
+    <div class="slider" id="slider">
+        <div class="dots">
+        <input type="radio"     id="btn0"   name="btn"  onclick="show0()">
+        <input type="radio"     id="btn1"   name="btn"  onclick="show1()">
+        <input type="radio"     id="btn2"   name="btn"  onclick="show2()">
+        <input type="radio"     id="btn3"   name="btn"  onclick="show3()">
+        </div>
+    </div>
+
+    <script>
+            var i = 0 ;
+            images= ["image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg" ];
+        setInterval(slide, 3000);
+        function slide(){
+            i++;
+            if(i >= images.length)    {   i = 0;  }
+          
+            document.getElementById("slider").style.backgroundImage = "url(" + images[i] + ")";
+            document.getElementById("btn" + i).checked = "checked";
+            
+        }
+        
+        function show0(){
+            document.getElementById("slider").style.backgroundImage = "url(" + images[0] + ")";
+            i=0;
+        }
+        function show1(){
+            document.getElementById("slider").style.backgroundImage = "url(" + images[1] + ")";
+            i=1;
+        }
+        function show2(){
+            document.getElementById("slider").style.backgroundImage = "url(" + images[2] + ")";
+            i=2;
+        }
+        function show3(){
+            document.getElementById("slider").style.backgroundImage = "url(" + images[3] + ")";
+            i=3;
+        }
+        function show(){
+            
+        }
+    </script>
+</body>
+</html>
