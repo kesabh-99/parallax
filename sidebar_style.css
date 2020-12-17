@@ -1,0 +1,79 @@
+*{
+    margin : 0px;
+    padding : 0px;
+}
+#sidebar{ 
+    margin : 0px;
+    padding : 0px;
+    width : 250px;
+    height : 100%;
+    background-color: rgba(20, 20, 22, 0.877) ;
+    position : fixed;
+    left :-300px;
+    top : 0px;
+    z-index : 1;
+   
+    transition : all .35s;
+}
+#sidebar .head{
+    color : white;
+    font-size: 30px;
+    font-family : algerian ; 
+    text-align: center;
+    line-height: 50px;
+    margin-top : 40px;
+}
+#sidebar .head:hover{
+    text-shadow: 3px 3px 10px white;
+}
+#sidebar ul{
+    list-style : none;
+    margin-top : 50px;
+    padding : 0px;
+    
+}
+#sidebar ul a{
+    text-decoration: none;
+    color : white ; 
+    line-height : 65px;
+    font-size : 22px;
+}
+#sidebar ul a li{
+    padding-left : 50px;
+    transition : all .25s;  
+    border-bottom : black 2px solid; 
+    border-top : rgba(102, 94, 94, 0.733) 2px solid;
+}
+#sidebar ul a li:hover{
+    background-color: rgba(154, 154, 168, 0.356) ;
+    color : cyan;
+    border-left : 4px cyan solid;
+}
+
+#open{
+    padding : 5px;
+    text-align : center;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    width : 50px;
+    height : 50px;
+    outline: none;
+ 
+}
+#open:hover{
+    background-color: rgba(31, 19, 19, 0.829);
+}
+
+#close{
+    padding : 5px;
+    text-align : center;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    right : 10px;
+    top : 0px;
+}
