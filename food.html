@@ -1,0 +1,224 @@
+<html>
+    <head>
+        <title>  Food  </title>
+        <link rel="stylesheet" href="navbar_style.css">
+        <style>
+            *{
+                margin : 0px ;
+                padding : 0px ; 
+            }
+            .navbar ul{
+    list-style : none ;
+    margin : 0px;
+    padding : 0px;
+}
+.navbar ul li{
+    float :  left;
+}
+
+.navbar ul li a{
+    display : block;
+    padding : 0px 25px ;
+    text-decoration: none;
+    font-size : 20px;
+    color : white;
+    line-height : 50px;
+    border-right : white 2px solid;
+}
+
+.navbar{
+    background-color : black;
+    height : 50px;
+}
+
+.navbar ul li a:hover{
+    background-color : blue;
+}
+
+.navbar h1{
+    color : white;
+    float : right;
+    line-height : 0.3;
+    margin-right : 30px;
+}
+.navbar h1:hover{
+    text-shadow : 7px 7px 7px gray;
+}
+
+    .first, .second, .third, .fourth{
+        min-height : 140%;
+        background-image  : url(1.jpg);
+        background-repeat : no-repeat ;
+        background-size : 100% 100%  ; 
+        background-attachment: fixed ;
+    }
+
+    .first-text, .second-text, .third-text{
+        min-height : 500px ; 
+        background-color : darkgray ; 
+    }
+    .second, .third, .fourth{
+        min-height: 600px;
+
+    }
+    .first{
+        position : relative ;
+    }
+    .second{
+        background-image  : url(2.jpg);
+    }
+    .third{
+        background-image  : url(3.jpg);
+        min-height : 80% ; 
+    }
+    .fourth{
+        background-image: url(4.jpg);
+    }
+    .first .content{
+        position: absolute;
+        top : 33% ; 
+        left : 37% ;
+        text-align: center;
+    }
+    .first .content h1{
+        font-size : 50px ;
+        font-family: cursive;
+    }
+    .first .content button{
+        padding : 18px;
+        width : 300px ;
+        font-size: 40px ; 
+        font-family: algerian;
+        background-color : transparent ;   
+        box-shadow : 2px 2px 5px white ;             
+    }
+    .first-text{
+        text-align : center ; 
+        font-size : 30px ; 
+        font-family: forte;
+        padding : 40px ; 
+    }
+    .second-text{
+        text-align: center;
+    }
+    .second-text .menu{
+        border : 2px solid black ;
+    }
+    .second-text .menu h2{
+        text-align: left;
+    }
+    .second-text .menu button {
+       float: right;
+    }
+    .footer{
+        height : 200px ; 
+        background-color: black;
+        color : white ; 
+        /* display:flex ; 
+        flex-direction: column; */
+    }
+    .footer .icons{
+        height: 80%;
+        border : white 2px solid ; 
+        width : 100% ; 
+        text-align: center;
+        line-height: 150px;
+    }
+
+    .footer .text{
+        height: 20%;
+        border : white 2px solid ; 
+        width: 100%;
+    }
+    .navbar{
+        opacity : 0.5 ;
+    }
+    .navbar:hover{
+        opacity : 1 ; 
+    }
+        </style>
+    </head>
+    <body>
+        <div class="first">
+            <div class="navbar">
+                <h1>  My Website </h1>
+                <ul>
+                    <li> <a href="#home"> Home </a>      </li>
+                    <li> <a href="#about">About Us</a>    </li> 
+                    <li> <a href="#menu">Menu</a>    </li> 
+                    <li> <a href="#contact">Contact Us</a>  </li> 
+                    <!-- <li> <a href="">Gallery</a>     </li>
+                    <li> <a href="">Services</a>    </li>  -->
+                </ul>
+            </div>    
+
+            <div class="content"    id="home">
+                <h1> Welcome to FOODz</h1>
+                <button> Let's see the MENU </button>
+            </div>
+            
+        </div>
+
+        <div class="first-text" id="about">
+            <h1> About us </h1>
+            <img src="cafe.jpg" alt=""  width="30%"   height="30%"  style="float: left; clear: both;">
+            <p    >
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, sit nemo? Aperiam nihil possimus facilis a est sed quos maiores inventore consequatur. Ipsum, optio ad deleniti itaque maiores perferendis sunt rem iusto aliquam asperiores aspernatur? Vel libero doloribus, voluptate debitis officia, animi tenetur ratione, ab unde repellendus voluptatibus ipsa fugiat!
+            </p>
+            
+        </div>
+
+        <div class="second">
+
+        </div>
+
+        <div class="second-text"    id="menu">
+            <h1> Our Menu </h1>
+            <div class="menu">
+                <h2> Margherita</h2>
+                <button>  $15.50  </button>
+                <h2> Fresh tomatoes, fresh mozzarella, fresh basil </h2>
+            </div>
+        </div>
+
+        <div class="third">
+
+        </div>
+
+
+        <div class="third-text" id="contact">
+            <h1> Contact </h1>
+            <h2> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, harum!</h2>
+            <br>
+            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque doloremque ipsum molestias eligendi iusto minus vero ut in inventore repudiandae!</h3>
+
+            <input type="text"  placeholder="Full Name ">       <br>
+            <input type="text"  placeholder="Contact Number ">      <br>
+            <input type="email" placeholder="Your Email">       <br>
+            <input type="date">     <br> 
+            <textarea  cols="100" rows="5"></textarea>      <br>
+            <button> Send Message </button>
+            
+        </div>
+
+        <div class="fourth">
+
+        </div>
+
+
+        <div class="footer">
+            <div class="icons">
+               <img src="fb_icon.png" alt=""    width="20px"    height="20px">
+               <img src="insta_icon.png" alt="" width="20px"    height="20px">
+               <img src="google+icon.png" alt=""    width="20px"    height="20px">
+               <img src="twitter_icon.png" alt=""   width="20px"    height="20px">
+            </div>
+            <div class="text">
+
+            </div>
+        </div>
+        
+
+        
+    </body>
+</html>
